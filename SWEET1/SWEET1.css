@@ -36,15 +36,18 @@
 .main_heading{
     margin: 20px;
     padding: 10px;
+    font-size: 50px;
 }
 
 .review{
     margin: 20px;
     padding: 10px;
+    font-size: 30px;
 }
 
 p{
     margin: 20px;
+    font-size: 20px;
 }
 
 .description{
@@ -77,5 +80,19 @@ p{
     color: #fa9cb4;
     border-radius: 10px;
     font-family: "Poppins", sans-serif;
+    background-color: white;
+}
+.Quantity{
+    margin-left: 20px;
+}
+.quantitybutton{
+    margin-left: 20px;
+    border-color: aliceblue;
+    background-color: white;
+}
+.btnweight{
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid gray;
     background-color: white;
 }
