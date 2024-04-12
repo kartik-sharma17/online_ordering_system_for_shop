@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* for main page */
+.sweet9 {
+    display: flex;
+}
+
+
+.img {
+    background-color: white;
+    height: 500vh;
+    width: 40vw;
+    border: 1px solid black;
+}
+
+.content {
+    height: 100vh;
+    width: 60vw;
+}
+
+/* for cotent part */
+.popular {
+    margin: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.main_heading {
+    margin: 20px;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.review {
+    margin: 20px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+p {
+    margin: 20px;
+    font-size: 15px;
+}
+
+.description {
+    margin: 20px;
+}
+
+/* for buttons on the main page  */
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+    margin: auto;
+}
+
+
+.shop_now {
+    font-size: 1.4vw;
+    padding: 10px 25px;
+    background-color: #fa9cb4;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.add_to_cart {
+    font-size: 1.4vw;
+    padding: 10px 25px;
+    border: 2px solid #fa9cb4;
+    color: #fa9cb4;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+}
+
+.Quantity {
+    margin-left: 20px;
+}
+
+.quantitybutton {
+    margin-left: 20px;
+    border-color: aliceblue;
+    background-color: white;
+}
+
+.btnweight {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.img9 {
+    height: auto;
+    width: auto;
+}
