@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 
@@ -161,4 +162,40 @@ footer{
     background-color: #b9aca9;
     height: 20vh;
     width: 100vw;
+}
+
+
+/* for shop */
+
+.shop{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+    margin-top: 30px;
+}
+
+.sweetrow{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sweet{
+    height: 60vh;
+    width: 20vw;
+    border: 2px solid black;
+    margin: 10px 7px;
+    border-radius: 20px;
+    /* box-shadow: 2px 3px 10px black; */
+}
+
+.pic{
+    height: 60%;
+    width: 100%;
+    background-color: aquamarine;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
