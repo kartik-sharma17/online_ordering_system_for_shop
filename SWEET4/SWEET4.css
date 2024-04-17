@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -6,25 +6,25 @@
 
 
 /* for main page */
-.sweet1{
+.sweet4 {
     display: flex;
 }
 
 
-.img{
+.img {
     background-color: white;
-    height: 100vh;
+    height: 500vh;
     width: 40vw;
     border: 1px solid black;
 }
 
-.content{
+.content {
     height: 100vh;
     width: 60vw;
 }
 
 /* for cotent part */
-.popular{
+.popular {
     margin: 20px;
     padding: 5px 20px;
     border-radius: 5px;
@@ -33,29 +33,29 @@
     font-weight: 600;
 }
 
-.main_heading{
+.main_heading {
     margin: 20px;
     padding: 10px;
     font-size: 50px;
 }
 
-.review{
+.review {
     margin: 20px;
     padding: 10px;
     font-size: 30px;
 }
 
-p{
+p {
     margin: 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-.description{
+.description {
     margin: 20px;
 }
 
 /* for buttons on the main page  */
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-evenly;
     width: 30vw;
@@ -63,7 +63,7 @@ p{
 }
 
 
-.shop_now{
+.shop_now {
     font-size: 1.4vw;
     padding: 10px 25px;
     background-color: #fa9cb4;
@@ -82,17 +82,24 @@ p{
     font-family: "Poppins", sans-serif;
     background-color: white;
 }
-.Quantity{
+
+.Quantity {
     margin-left: 20px;
 }
-.quantitybutton{
+
+.quantitybutton {
     margin-left: 20px;
     border-color: aliceblue;
     background-color: white;
 }
-.btnweight{
+
+.btnweight {
     padding: 10px;
     border-radius: 10px;
-    border:1px solid gray;
+    border: 1px solid gray;
     background-color: white;
+}
+.img4{
+    height: auto;
+    width: auto;
 }
