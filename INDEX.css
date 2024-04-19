@@ -7,12 +7,13 @@
 
 
 header {
-    /* background-color: aqua; */
+    /* background-color: white; */
     height: 20vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* position: fixed; */
 }
 
 .uppernavbar {
@@ -224,14 +225,6 @@ footer {
 }
 
 
-/* for photo of sweets */
-
-.pic1 {
-    background-image: url(PIC/Gulab_jamun_pic.jpg);
-    background-size: cover;
-
-}
-
 
 /* for rate and button in sweet div */
 .rate {
@@ -265,3 +258,18 @@ footer {
     font-family: "Acme", sans-serif;
     font-weight: 400;
 }
+
+.btn:hover{
+      background-color: #fa9fb5;
+      color: white;
+}
+
+
+
+/* for photo of sweets */
+
+.pic1 {
+    background-image: url(PIC/Gulab_jamun_pic_final.jpg);
+    background-size: cover;
+}
+
