@@ -5,16 +5,23 @@
     font-family: sans-serif;
 }
 
+/* for scrooling navbar  */
+
 
 header {
-    /* background-color: white; */
+    background-color: white;
     height: 20vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* position: fixed; */
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
 }
+
 
 .uppernavbar {
     /* background-color: pink; */
@@ -98,6 +105,61 @@ header {
     background-color: white;
     font-size: 1.2vw;
 }
+
+
+/* for slider */
+.slider{
+    height: calc(100vh - 20vh);
+    width: 100vw;
+    background-color: aqua;
+    margin-top: 20vh;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+}
+
+
+/* to add image in slider */
+
+
+.slide1{
+    height: 100%;
+    width: 100%;
+    background-image: url(SLIDER_PHOTO/pexels-karolina-grabowska-4226881.jpg);
+    background-size: cover;
+}
+.slide2{
+    height: 100%;
+    width: 100%;
+    background-image: url(SLIDER_PHOTO/pexels-rp-chill-679384636-18467607.jpg);
+    background-size: cover;
+}
+.slide3{
+    height: 100%;
+    width: 100%;
+    background-image: url(SLIDER_PHOTO/pexels-steve-1000366.jpg);
+    background-size: cover;
+}
+.slide4{
+    height: 100%;
+    width: 100%;
+    background-image: url(SLIDER_PHOTO/pexels-steve-1000366\ \(1\).jpg);
+    background-size: cover;
+}
+
+
+/* for mostly sell slider  */
+.most_selling_items{
+    height: 80vh;
+    width: 100vw;
+    background-color: aquamarine;
+}
+
+/* for front introduction */
 
 .front {
     background-color: #b9aca9;
