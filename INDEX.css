@@ -1,1 +1,337 @@
-/* me  */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* for scrooling navbar  */
+
+
+header {
+    background-color: white;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+.uppernavbar {
+    /* background-color: pink; */
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    /* background-color: red; */
+    height: 10vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.navbtn {
+    font-size: 2vw;
+    height: 5vh;
+    padding: 5px 15px;
+    border: none;
+    background-color: white;
+    font-family: "Teko", sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    width: 33%;
+}
+
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.7vw;
+    font-weight: 500;
+    margin: 0px;
+    width: 20%;
+}
+
+
+
+.searchbar {
+    /* margin: 30px; */
+    font-size: 1.5vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    /* margin-right: -20px; */
+}
+
+.searchbar i {
+    margin-right: 20px;
+
+}
+
+.searchbar input {
+    font-size: 20px;
+    width: 70%;
+    height: 5vh;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+
+/* for search icon */
+.search {
+    padding: 7.3px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+    font-size: 1.2vw;
+}
+
+
+/* for slider */
+.slider{
+    height: calc(100vh - 20vh);
+    width: 100vw;
+    background-color: aqua;
+    margin-top: 20vh;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+}
+
+
+/* to add image in slider */
+
+
+.slide1{
+    height: 100%;
+    width: 100%;
+    background-image: url(SLIDER_PHOTO/pexels-karolina-grabowska-4226881.jpg);
+    background-size: cover;
+}
+.slide2{
+    height: 100%;
+    width: 100%;
+    background-image: url(SLIDER_PHOTO/pexels-rp-chill-679384636-18467607.jpg);
+    background-size: cover;
+}
+.slide3{
+    height: 100%;
+    width: 100%;
+    background-image: url(SLIDER_PHOTO/pexels-steve-1000366.jpg);
+    background-size: cover;
+}
+.slide4{
+    height: 100%;
+    width: 100%;
+    background-image: url(SLIDER_PHOTO/pexels-steve-1000366\ \(1\).jpg);
+    background-size: cover;
+}
+
+
+/* for mostly sell slider  */
+.most_selling_items{
+    height: 80vh;
+    width: 100vw;
+    background-color: aquamarine;
+}
+
+/* for front introduction */
+
+.front {
+    background-color: #b9aca9;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.frontcontent {
+    height: 100vh;
+    width: 50%;
+    margin: 50px;
+    color: white;
+    margin-left: 120px;
+    margin-top: 70px;
+}
+
+
+.image {
+    height: 100vh;
+    width: 50%;
+}
+
+.frontcontent h1 {
+    font-size: 5vw;
+    font-family: "Cantora One", sans-serif;
+    line-height: 70px;
+}
+
+
+.frontcontent h3 {
+    font-size: 2vw;
+    font-family: "Oleo Script Swash Caps", system-ui;
+    margin-top: 10px;
+}
+
+.frontcontent p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Kotta One", serif;
+    font-weight: 400;
+    outline-color: black;
+    font-size: 1.2vw;
+}
+
+.explore {
+    padding: 10px 25px;
+    background-color: #b9aca9;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.shop {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+footer {
+    background-color: #b9aca9;
+    height: 20vh;
+    width: 100vw;
+}
+
+
+/* for shop */
+
+.shop {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6ef;
+    margin-top: 30px;
+}
+
+.sweetrow {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sweet {
+    height: 70vh;
+    width: 20vw;
+    /* border: 2px solid black; */
+    margin: 10px 7px;
+    border-radius: 10px;
+    /* box-shadow: 2px 3px 10px black; */
+    background-color: white;
+}
+
+.pic {
+    height: 55%;
+    width: 100%;
+    background-color: aquamarine;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content {
+    height: 45%;
+    width: 90%;
+    margin: 10px;
+}
+
+.content h1 {
+    padding-left: 5px;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    /* margin-top: 10px; */
+}
+
+.content p {
+    /* margin-bottom: 10px; */
+    color: #b1aeae;
+    padding: 0px 5px;
+    font-family: "Kotta One", serif;
+    font-weight: 400;
+}
+
+
+
+/* for rate and button in sweet div */
+.rate {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* margin-top: 10px; */
+    padding: 5px;
+    align-items: center;
+}
+
+
+/* for price in sweet  */
+.price {
+    display: flex;
+    align-items: center;
+    font-size: 1.6vw;
+    font-weight: 800;
+}
+
+
+/* for shop now btn */
+
+.btn {
+    padding: 7px 18px;
+    border: 2px solid #fa9fb5;
+    background-color: white;
+    border-radius: 10px;
+    color: #fa9fb5;
+    font-size: 1.2vw;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+}
+
+.btn:hover{
+      background-color: #fa9fb5;
+      color: white;
+}
+
+
+
+/* for photo of sweets */
+
+.pic1 {
+    background-image: url(PIC/Gulab_jamun_pic_final.jpg);
+    background-size: cover;
+}
+
