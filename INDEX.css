@@ -205,7 +205,7 @@ header {
     font-size: 1.2vw;
 }
 
-.explore {
+.explore_btn {
     padding: 10px 25px;
     background-color: #b9aca9;
     border: 1px solid white;
@@ -216,17 +216,6 @@ header {
     margin-bottom: 20px;
 }
 
-.shop {
-    background-color: white;
-    height: 100vh;
-    width: 100vw;
-}
-
-footer {
-    background-color: #b9aca9;
-    height: 20vh;
-    width: 100vw;
-}
 
 
 /* for shop */
@@ -335,3 +324,84 @@ footer {
     background-size: cover;
 }
 
+.explore_more_btn{
+    padding: 10px 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    /* color: white; */
+    font-size: 1.2vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    background-color: white;
+    font-family: "Acme", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* animation in explore more */
+
+.explore_more_btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/* for map  */
+
+.div_map{
+    height: 70vh;
+    width: 100vw;
+    background-color: #f6f6f6ef;
+}
+
+.div_map h1{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+
+
+/* for footer  */
+
+footer {
+    background-color: white;
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+}
+
+/* for content indside footer */
+
+.footer_div{
+    height: 100%;
+    width: 20%;
+    margin-top: 30px;
+    /* background-color: #fa9fb5; */
+}
+
+.footer_div h1 {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-size: 1.8vw;
+}
+
+.footer_div a{
+    text-decoration: none;
+    color: #838080;
+}
+
+.footer_div p{
+    margin-top: 10px;
+    font-size: 1.2vw;
+    font-family: "Kotta One", serif;
+    font-weight: 400;
+}
+
+.store_address{
+    width: 40%;
+    height:100%;
+}
