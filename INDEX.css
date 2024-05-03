@@ -225,7 +225,17 @@ header {
     font-size: 1.5vw;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    transition: transform .2s;
 }
+
+.explore_btn:hover{
+    transform: scale(1.2);
+    background-color: white;
+    color:#b9aca9 ;
+}
+
 
 
 
