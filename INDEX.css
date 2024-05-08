@@ -5,6 +5,11 @@
     font-family: sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* for scrooling navbar  */
 
 
@@ -20,6 +25,7 @@ header {
     right: 0px;
     left: 0px;
     bottom: 0px;
+    z-index: 2;
 }
 
 
@@ -166,6 +172,7 @@ header {
     height: 100vh;
     width: 100vw;
     display: flex;
+    margin-top: 20vh;
 }
 
 .frontcontent {
@@ -178,9 +185,13 @@ header {
 }
 
 
-.image {
-    height: 100vh;
-    width: 50%;
+.front_image{
+    height: 75%;
+    width: 30%;
+    /* background-color: red; */
+    margin-top: 70px;
+    background-image: url(FRONT_IMAGE_1.png);
+    background-size: cover;
 }
 
 .frontcontent h1 {
@@ -205,7 +216,7 @@ header {
     font-size: 1.2vw;
 }
 
-.explore {
+.explore_btn {
     padding: 10px 25px;
     background-color: #b9aca9;
     border: 1px solid white;
@@ -214,19 +225,18 @@ header {
     font-size: 1.5vw;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    transition: transform .2s;
 }
 
-.shop {
+.explore_btn:hover{
+    transform: scale(1.2);
     background-color: white;
-    height: 100vh;
-    width: 100vw;
+    color:#b9aca9 ;
 }
 
-footer {
-    background-color: #b9aca9;
-    height: 20vh;
-    width: 100vw;
-}
+
 
 
 /* for shop */
@@ -254,8 +264,15 @@ footer {
     margin: 10px 7px;
     border-radius: 10px;
     /* box-shadow: 2px 3px 10px black; */
-    background-color: white;
+    background-color: white ;
+    transition: transform .2s; 
 }
+
+
+.sweet:hover{
+    transform:scale(1.05) ;
+}
+
 
 .pic {
     height: 55%;
@@ -319,11 +336,13 @@ footer {
     font-size: 1.2vw;
     font-family: "Acme", sans-serif;
     font-weight: 400;
+    transition: transform .2s;
 }
 
 .btn:hover{
       background-color: #fa9fb5;
       color: white;
+      transform: scale(1.1);
 }
 
 
@@ -335,3 +354,109 @@ footer {
     background-size: cover;
 }
 
+.explore_more_btn{
+    padding: 10px 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    /* color: white; */
+    font-size: 1.2vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    background-color: white;
+    font-family: "Acme", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: transform .2s;
+}
+
+/* animation in explore more */
+
+.explore_more_btn:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/* for map  */
+
+.div_map{
+    height: 70vh;
+    width: 100vw;
+    background-color: #f6f6f6ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div_map h1{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-right:53%;
+    margin-bottom: 10px;
+}
+
+.map{
+    height: 50vh;
+    width: 70vw;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+    filter: invert(100%);
+    /* z-index: -1; */
+    transition: transform .2s;
+}
+
+iframe:hover{
+    transform: scale(1.1);
+}
+
+/* for footer  */
+
+footer {
+    background-color: white;
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+}
+
+/* for content indside footer */
+
+.footer_div{
+    height: 100%;
+    width: 20%;
+    margin-top: 30px;
+    /* background-color: #fa9fb5; */
+}
+
+.footer_div h1 {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-size: 1.8vw;
+}
+
+.footer_div a{
+    text-decoration: none;
+    color: #838080;
+}
+
+.footer_div p{
+    margin-top: 10px;
+    font-size: 1.2vw;
+    font-family: "Kotta One", serif;
+    font-weight: 400;
+}
+
+.store_address{
+    width: 40%;
+    height:100%;
+}
+
+
+
+/* footer */
