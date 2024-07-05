@@ -4,11 +4,12 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
-a{
-    text-decoration: none;
-    color: black;
+span{
+    color: #b9aca9;
+    font-family: "Teko", sans-serif;
+    font-size: 3vw;
 }
+
 
 /* for scrooling navbar  */
 
@@ -55,6 +56,8 @@ header {
     border: none;
     background-color: white;
     font-family: "Teko", sans-serif;
+    text-decoration: none;
+    color: black;
 }
 
 .logo {
@@ -100,37 +103,25 @@ header {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     padding: 10px;
-    border: none;
+    border: 2px solid black;
 }
 
 /* for search icon */
 .search {
-    padding: 7.3px;
+    padding: 7px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: white;
-    font-size: 1.2vw;
+    font-size: 0.95vw;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 
-/* for slider */
-.slider{
-    height: calc(100vh - 20vh);
-    width: 100vw;
-    background-color: aqua;
-    margin-top: 20vh;
-    position: relative;
-    z-index: -1;
-    overflow: hidden;
-}
 
 
-/* for mostly sell slider  */
-.most_selling_items{
-    height: 80vh;
-    width: 100vw;
-    background-color: aquamarine;
-}
+
 
 /* for front introduction */
 
@@ -143,9 +134,9 @@ header {
 }
 
 .frontcontent {
-    height: 100vh;
+    height: 80vh;
     width: 50%;
-    margin: 50px;
+    margin-top: 50px;
     color: white;
     margin-left: 120px;
     margin-top: 70px;
@@ -204,6 +195,36 @@ header {
 }
 
 
+/* for mostly sell slider  */
+.most_selling_items{
+    height: 90vh;
+    width: 100vw;
+    background-color:#f6f6f6ef;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+   
+}
+
+.most_selling_items h2{
+    font-family: "Teko", sans-serif;
+    font-size: 3vw;
+}
+
+
+/* for slider */
+.slider{
+    height: calc(100vh - 20vh);
+    width: 100vw;
+    background-color: aqua;
+    margin-top: 2vh;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
 
 
 /* for shop */
@@ -215,9 +236,13 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: #f6f6f6ef;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
+.shop h2{
+    font-family: "Teko", sans-serif;
+    font-size: 3vw;
+}
 .sweetrow {
     width: 90%;
     display: flex;
@@ -259,6 +284,7 @@ header {
     padding-left: 5px;
     font-family: "Acme", sans-serif;
     font-weight: 400;
+    font-size: 2vw;
     /* margin-top: 10px; */
 }
 
@@ -268,6 +294,7 @@ header {
     padding: 0px 5px;
     font-family: "Kotta One", serif;
     font-weight: 400;
+    margin-top: -10px;
 }
 
 
@@ -277,7 +304,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* margin-top: 10px; */
+    margin-top: -15px;
     padding: 5px;
     align-items: center;
 }
@@ -288,13 +315,16 @@ header {
     display: flex;
     align-items: center;
     font-size: 1.6vw;
-    font-weight: 800;
+}
+
+.price h3 , h5{
+    font-weight: 600;
 }
 
 
 /* for shop now btn */
 
-.btn {
+.bt {
     padding: 7px 18px;
     border: 2px solid #fa9fb5;
     background-color: white;
@@ -306,7 +336,7 @@ header {
     transition: transform .2s;
 }
 
-.btn:hover{
+.bt:hover{
       background-color: #fa9fb5;
       color: white;
       transform: scale(1.1);
@@ -381,6 +411,37 @@ iframe{
 
 iframe:hover{
     transform: scale(1.1);
+}
+
+
+/* contact with us */
+.contact{
+    height: 20vh;
+    background-color: #838080;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email_input{
+    display: flex;
+    justify-content: center;
+}
+
+.email_input h4,form{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+}
+
+#newsletter_email{
+    padding: 2px;
+    /* border-radius: 15px; */
+}
+
+.newspaper_button{
+    padding: 4px;
+    /* border-radius: 15px; */
 }
 
 /* for footer  */
