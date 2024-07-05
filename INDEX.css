@@ -129,34 +129,6 @@ header {
 }
 
 
-/* to add image in slider */
-
-
-.slide1{
-    height: 100%;
-    width: 100%;
-    background-image: url(SLIDER_PHOTO/pexels-karolina-grabowska-4226881.jpg);
-    background-size: cover;
-}
-.slide2{
-    height: 100%;
-    width: 100%;
-    background-image: url(SLIDER_PHOTO/pexels-rp-chill-679384636-18467607.jpg);
-    background-size: cover;
-}
-.slide3{
-    height: 100%;
-    width: 100%;
-    background-image: url(SLIDER_PHOTO/pexels-steve-1000366.jpg);
-    background-size: cover;
-}
-.slide4{
-    height: 100%;
-    width: 100%;
-    background-image: url(SLIDER_PHOTO/pexels-steve-1000366\ \(1\).jpg);
-    background-size: cover;
-}
-
 
 /* for mostly sell slider  */
 .most_selling_items{
