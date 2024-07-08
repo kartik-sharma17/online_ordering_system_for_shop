@@ -350,6 +350,38 @@ header {
     background-image: url(PIC/Gulab_jamun_pic_final.jpg);
     background-size: cover;
 }
+.pic2 {
+    background-image: url(PIC/kaju\ katli.webp);
+    background-size: cover;
+}
+.pic3 {
+    background-image: url(PIC/rasmalia.webp);
+    background-size: cover;
+}
+.pic4 {
+    background-image: url(PIC/besan\ laddu.webp);
+    background-size: cover;
+}
+.pic5 {
+    background-image: url(PIC/barfi.webp);
+    background-size: cover;
+}
+.pic6 {
+    background-image: url(PIC/peda.webp);
+    background-size: cover;
+}
+.pic7 {
+    background-image: url(PIC/rasgulla.webp);
+    background-size: cover;
+}
+.pic8 {
+    background-image: url();
+    background-size: cover;
+}
+.pic9 {
+    background-image: url(PIC/motichur.webp);
+    background-size: cover;
+}
 
 .explore_more_btn{
     padding: 10px 25px;
