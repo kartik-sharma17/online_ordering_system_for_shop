@@ -63,8 +63,12 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    margin: 30px;
-    width: 33%;
+    margin: 20px;
+    width: 160px;
+    height: 85px;
+    background-image: url(PIC/logo.png);
+    /* background-color: aqua; */
+    background-size: cover;
 }
 
 
@@ -76,6 +80,7 @@ header {
     font-weight: 500;
     margin: 0px;
     width: 20%;
+    margin-left:200px;
 }
 
 
@@ -375,11 +380,23 @@ header {
     background-size: cover;
 }
 .pic8 {
-    background-image: url();
+    background-image: url(PIC/bourvita_burfi.webp);
     background-size: cover;
 }
 .pic9 {
+    background-image: url(PIC/ghewar.jpg);
+    background-size: cover;
+}
+.pic10 {
     background-image: url(PIC/motichur.webp);
+    background-size: cover;
+}
+.pic11 {
+    background-image: url(PIC/malai\ laddu.jpg);
+    background-size: cover;
+}
+.pic12 {
+    background-image: url(PIC/gajar_halwa.webp);
     background-size: cover;
 }
 
