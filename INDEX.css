@@ -93,7 +93,8 @@ header {
     padding:  .7px 6px;
     display: none;
     background-color: #fa9fb5;
-    font-weight: 700;
+    font-weight: 600;
+    color: white;
 }
 
 .searchbar {

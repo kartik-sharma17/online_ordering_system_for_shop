@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+span{
+    color: #b9aca9;
+    font-family: "Teko", sans-serif;
+    font-size: 3vw;
+}
+
+
+/* for scrooling navbar  */
+
+
+header {
+    background-color: white;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 2;
+    border-bottom: 1px solid black;
+}
+
+
+.uppernavbar {
+    /* background-color: pink; */
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    /* background-color: red; */
+    height: 10vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.navbtn {
+    font-size: 2vw;
+    height: 5vh;
+    padding: 5px 15px;
+    border: none;
+    background-color: white;
+    font-family: "Teko", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 160px;
+    height: 85px;
+    background-image: url(../PIC/logo.png);
+    /* background-color: aqua; */
+    background-size: cover;
+}
+
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.7vw;
+    font-weight: 500;
+    margin: 0px;
+    width: 20%;
+    margin-left:200px;
+}
+
+.searchbar {
+    /* margin: 30px; */
+    font-size: 1.5vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    /* margin-right: -20px; */
+}
+
+.searchbar i {
+    margin-right: 20px;
+
+}
+
+.searchbar input {
+    font-size: 20px;
+    width: 70%;
+    height: 5vh;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* for search icon */
+.search {
+    padding: 7px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+    font-size: 1.1vw;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+/* for row */
+.col-8{
+    margin-top:23vh ;
+    border: 1px solid black;
+}
+
+.col-8 h1{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+
+.col-8 p{
+    font-family: "Kotta One", serif;
+    font-weight: 600;
+}
+/* for items displayed */
+.single{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* for add and remove buttom */
+.btt{
+    padding: 1px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.quantity{
+    display: flex;
+}
+
+.price{
+    font-weight: 600;
+}

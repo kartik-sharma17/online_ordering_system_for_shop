@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulab Jamun</title>
+    <title>Document</title>
 
 
     <!-- for bootstrap css -->
@@ -13,8 +13,12 @@
 
 
     <!-- for css -->
-    <link rel="stylesheet" href="SWEET.css">
+    <link rel="stylesheet" href="CART.css">
 
+    <!-- including cdn for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- for font used -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,19 +33,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Teko:wght@300..700&display=swap"
         rel="stylesheet">
 
-    <!-- including cdn for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 
 </head>
 
 <body>
+
     <header>
         <div class="uppernavbar">
             <div class="logo">
-                
+
             </div>
             <div class="icon">
                 <i class="fa-brands fa-instagram"></i>
@@ -51,7 +51,8 @@
             <div class="searchbar">
                 <input type="text" name="searchbar" placeholder="Search">
                 <i class="fa-solid fa-magnifying-glass search"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i id="cart" class="fa-solid fa-cart-shopping"></i>
+                <p id="c_display"></p>
             </div>
         </div>
         <div class="navbar">
@@ -61,39 +62,26 @@
         </div>
     </header>
 
+    <!-- for bill -->
     <div class="row">
-        <div class="col-1"></div>
-        <div class="col-5 bg-warning front_image mt-5"></div>
-        <div class="col-5 bg-white front_des">
-            <button class="top_btn mt-5">
-                Popular
-            </button>
-            <h1 class="main_heading mt-3 ms-3">
-                Gulab <span>Jamun</span>
-            </h1>
+        <div class="col-2"></div>
+        <div class="col-8">
+            <h1>items Summary</h1>
 
-            <h3 class="description ms-3 mt-3">
-                Description-
-            </h3>
-            <p class="front_p ms-3">
-                Gulab jamun is a popular South Asian dessert made from khoya (reduced milk solids) or milk powder,
-                shaped into small balls, deep-fried until golden brown, and soaked in a sugar syrup flavored with
-                cardamom, rose water, or saffron. The result is a sweet, soft, and spongy treat, often enjoyed at
-                festivals, celebrations, and special occasions.
-            </p>
-
-            <div class="rate mt-3 ms-3">
-                <div class="price">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>
-                    <h3> 100</h3>
-                    <h5>/kg</h5>
+            <div class="items" id="item_table">
+                <div class="single">
+                    <p>1. Kaju katli </p>
+                    <div class="quantity">
+                        <P class="ms-5 btt add">+</P>
+                        <P class="ms-1 me-1">1</P>
+                        <P class="me-5 btt remove">-</P>
+                    </div>
+                    <div class="price">100/-</div>
                 </div>
-                
+
             </div>
-            <a href="#"><button class="bt ms-3">Buy Now</button></a>
-            <a href="#"><button class="bt ms-3">Add To Cart</button></a>
         </div>
-        <div class="col-1"></div>
+        <div class="col-2"></div>
     </div>
 
 
@@ -101,10 +89,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
-    <script>
-
-    </script>
+    <!-- for external js -->
+    <script src="CART.js"></script>
 </body>
 
 </html>
