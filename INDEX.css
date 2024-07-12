@@ -92,7 +92,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 30%;
     /* margin-right: -20px; */
 }
 
@@ -108,7 +108,7 @@ header {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     padding: 10px;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 /* for search icon */
@@ -117,10 +117,10 @@ header {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: white;
-    font-size: 0.95vw;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    font-size: 1.1vw;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 
