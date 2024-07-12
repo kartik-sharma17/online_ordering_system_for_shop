@@ -489,7 +489,9 @@ iframe:hover{
 }
 
 .newspaper_button{
-    padding: 4px;
+    padding: 5px 15px;
+    color: white;
+    background-color: #006168;
     /* border-radius: 15px; */
 }
 
@@ -497,9 +499,32 @@ iframe:hover{
 
 footer {
     background-color: white;
-    height: 25vh;
+    height: 15vh;
     width: 100vw;
     display: flex;
+}
+
+/* for footer logo */
+.logo2{
+    height: 160px;
+    width: 300px;
+    /* background-color: #006168;*/
+    background: url(PIC/logo.png);
+    background-size: cover;
+    margin: 20px;
+    margin-left: 60px;
+    margin-top: -20px;
+    font-family: "Teko", sans-serif;
+}
+
+/* for address in footer */
+.address_footer_div{
+    height: 30px;
+    width: 300px;
+    margin: 20px;
+    margin-left: 60px;
+    margin-top: -10px;
+    color: #838080;
 }
 
 /* for content indside footer */
