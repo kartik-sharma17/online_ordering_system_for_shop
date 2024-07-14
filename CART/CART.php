@@ -62,6 +62,10 @@
         </div>
     </header>
 
+
+    <?php $example = $_GET["Gulab_jamun"] ?>
+
+    
     <!-- for bill -->
     <div class="row">
         <div class="col-2"></div>
@@ -84,13 +88,15 @@
         <div class="col-2"></div>
     </div>
 
+    <h1><?php echo $example ?></h1>
+
 
     <!-- for bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- for external js -->
-    <script src="CART.js"></script>
+    <script src="../INDEX.js"></script>
 </body>
 
 </html>
