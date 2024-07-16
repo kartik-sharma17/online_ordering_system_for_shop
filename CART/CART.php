@@ -8,30 +8,24 @@
 
 
     <!-- for bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
     <!-- for css -->
     <link rel="stylesheet" href="CART.css">
 
     <!-- including cdn for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- for font used -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Kotta+One&family=Oleo+Script+Swash+Caps:wght@400;700&family=Oswald:wght@200..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Kotta+One&family=Oleo+Script+Swash+Caps:wght@400;700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
     <!-- for font of front -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Teko:wght@300..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Teko:wght@300..700&display=swap" rel="stylesheet">
 
 
 </head>
@@ -63,9 +57,15 @@
     </header>
 
 
-    <?php $example = $_GET["Gulab_jamun"] ?>
+    <?php
+    $location = $_GET["loca"];
+    $items = $_GET["items_added"];
+    $number_of_items = $_GET["number_of_items"];
 
-    
+    ?>
+    <P id="data"><?php echo $items?></P>
+
+
     <!-- for bill -->
     <div class="row">
         <div class="col-2"></div>
@@ -73,30 +73,26 @@
             <h1>items Summary</h1>
 
             <div class="items" id="item_table">
-                <div class="single">
-                    <p>1. Kaju katli </p>
-                    <div class="quantity">
-                        <P class="ms-5 btt add">+</P>
-                        <P class="ms-1 me-1">1</P>
-                        <P class="me-5 btt remove">-</P>
-                    </div>
-                    <div class="price">100/-</div>
-                </div>
-
             </div>
         </div>
         <div class="col-2"></div>
     </div>
 
-    <h1><?php echo $example ?></h1>
+
+    <p id="current_items" style="display: none;"><?php echo $items ?></p>
+
+
+
+
+
+
+
 
 
     <!-- for bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- for external js -->
-    <script src="../INDEX.js"></script>
+    <script type="text/javascript" src="CART.js"></script>
 </body>
 
 </html>
