@@ -1,25 +1,29 @@
  
 
 let total_items = 0;
+let rates = [];
 let items_list = [];
 
-function addtocartanimation(item){
+function addtocartanimation(item,rate){
         total_items++;
         items_list.push(item);
+        rates.push(rate);
         alert("Items is added to cart");
         let cart_display = document.getElementById("c_display");
         cart_display.style.display="inline";
         cart_display.innerHTML = total_items;
         console.log(items_list);
+        console.log(rates);
+
 } 
 
 
 // to send data 
 function send(){
     let items_added = document.getElementById("items_added"); 
-    let number_of_items = document.getElementById("number_of_items"); 
+    let rate = document.getElementById("rates"); 
     items_added.value = items_list;
-    number_of_items.value = total_items;
+    rate.value = rates;
 }
 
 

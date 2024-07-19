@@ -60,10 +60,11 @@
     <?php
     $location = $_GET["loca"];
     $items = $_GET["items_added"];
-    $number_of_items = $_GET["number_of_items"];
+    $rates = $_GET["rates"];
 
     ?>
     <P id="data"><?php echo $items?></P>
+    <P id="data_rates"><?php echo $rates?></P>
 
 
     <!-- for bill -->

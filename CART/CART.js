@@ -1,6 +1,9 @@
 
 let data = document.getElementById('data').innerHTML;
 let items = data.split(",");
+let data_rates = document.getElementById('data_rates').innerHTML;
+let rates = data_rates.split(",");
+let updated_rates = [];
 
 bill();
 
@@ -40,7 +43,7 @@ function bill(){
             let a = parseInt(quantity.value);
             a = a+1;
             quantity.value = a;
-            console.log(a);
+            price(a,i)
         }
 
 
@@ -60,6 +63,7 @@ function bill(){
                 let a = parseInt(quantity.value);
                 a=a-1
                 quantity.value = a;
+                price(a,i)
             }
             else{
                 document.getElementById('item'+i).remove();
@@ -74,11 +78,28 @@ function bill(){
         document.getElementById('quantity'+i).appendChild(create_remove);
     
     
-        let create_price = document.createElement('div');
+        let create_price = document.createElement('input');
+        create_price.setAttribute("readOnly" , '');
         create_price.className = 'price';
-        create_price.innerHTML = '100/-';
+        create_price.value = rates[i]+'/-';
+        create_price.id ='price'+i;
         document.getElementById('item'+i).appendChild(create_price);
+
+
+        // FOR PRICE TO CHANGE ACCORDING TO QUANTITY---
+        function price(a,id){
+            let price = a*rates[i];
+            let display = document.getElementById('price'+i)
+            display.value=price;
+            updated_rates[i] = price;
+            console.log(updated_rates);
+        }
+    
     }
+
+    // for total price to dispay 
+    let create_total = document.createElement('input');
+
 }
 
 

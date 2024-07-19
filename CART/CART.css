@@ -160,6 +160,9 @@ header {
 
 .price{
     font-weight: 600;
+    border: none;
+    width: 60px;
+    text-align: center;
 }
 
 /* for displaying the quantity */
