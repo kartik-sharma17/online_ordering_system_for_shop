@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CHECKOUT</title>
 
 
     <!-- for bootstrap css -->
@@ -77,6 +77,38 @@
             </div>
         </div>
         <div class="col-2"></div>
+
+        <!-- for bill to display -->
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1>Bill</h1>
+                <div class="bill" id="bill_display">
+                    <div class="rate_display">
+                        <h6>Sub Total :</h6>
+                        <input readonly id="total" class="price total">
+                    </div>
+                    <div class="rate_display">
+                        <h6>SGST 2.5% :</h6>
+                        <input readonly id="sgst_total" class="price total">
+                    </div>
+                    <div class="rate_display">
+                        <h6>CGST 2.5% :</h6>
+                        <input readonly id="cgst_total" class="price total">
+                    </div>
+                    <div class="rate_display">
+                        <h6>Grand Total :</h6>
+                        <input readonly id="Grand_total" class="price total">
+                    </div>
+                    <form>
+                        <button class="btn btn-outline-success btn-sm mt-2 mb-2">CLICK TO CHECKOUT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
     </div>
 
 

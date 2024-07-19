@@ -3,9 +3,12 @@ let data = document.getElementById('data').innerHTML;
 let items = data.split(",");
 let data_rates = document.getElementById('data_rates').innerHTML;
 let rates = data_rates.split(",");
-let updated_rates = [];
+let updates_rates = [];
+
+
 
 bill();
+
 
 function bill(){
 
@@ -14,6 +17,8 @@ function bill(){
     
     for(let i = 0 ; i< items.length ; i++){
     
+        
+
         // for single class
         let create_class_single = document.createElement('div');
         create_class_single.className ='single';
@@ -43,7 +48,10 @@ function bill(){
             let a = parseInt(quantity.value);
             a = a+1;
             quantity.value = a;
-            price(a,i)
+            price(a,i);
+            // document.getElementById('total').remove();
+            bill_display();
+            
         }
 
 
@@ -63,14 +71,20 @@ function bill(){
                 let a = parseInt(quantity.value);
                 a=a-1
                 quantity.value = a;
-                price(a,i)
+                price(a,i);
+                // document.getElementById('total').remove();
+                bill_display();
+
             }
             else{
                 document.getElementById('item'+i).remove();
                 let index =items.indexOf(items[i]);
                 items.splice(index,1);
+                updates_rates.splice(index,1);
+                // document.getElementById('total').remove();
+                bill_display();
             }
-            console.log(items);
+        
         };
     
         document.getElementById('quantity'+i).appendChild(create_add);
@@ -87,18 +101,38 @@ function bill(){
 
 
         // FOR PRICE TO CHANGE ACCORDING TO QUANTITY---
-        function price(a,id){
+        function price(a,i){
             let price = a*rates[i];
-            let display = document.getElementById('price'+i)
-            display.value=price;
-            updated_rates[i] = price;
-            console.log(updated_rates);
+            let display = document.getElementById('price'+i);
+            display.value=price+'/-';
+            updates_rates[i] = price;
+            console.log(updates_rates);
+            console.log(rates)
         }
+
+        updates_rates[i] =document.getElementById('price'+i).value;
     
     }
 
     // for total price to dispay 
-    let create_total = document.createElement('input');
+    function bill_display(i){
+        sum = 0;
+        updates_rates.forEach(number =>{
+            sum = parseInt(number)+sum;
+        });
+        let total =document.getElementById("total");
+        total.value = sum+'/-';
+        let sgst =sum*2.5/100+'/-';
+        document.getElementById('sgst_total').value =sgst;
+        let cgst =sum*2.5/100+'/-';
+        document.getElementById('cgst_total').value =cgst;
+        let grand_total =sum + parseInt(sgst) + parseInt(cgst)+'/-' ;
+        document.getElementById('Grand_total').value =grand_total;
+    }
+
+    
+    bill_display();
+
 
 }
 
@@ -109,7 +143,3 @@ function bill(){
 //     bt.addEventListener("hover",remove(items[i]));
 // }
 
-
-function remove(item){
-    
-}
